@@ -1,0 +1,221 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px; 
+    height: auto;
+    margin-left: 20px;
+}
+.caption{
+    color: #000000;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+section {
+    padding: 15px;
+    text-align: center;
+}
+
+
+/* Add more styles as needed */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+#search-input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 500px;
+}
+
+#search-button {
+    padding: 8px 15px;
+    font-size: 14px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #f32929;
+}
+
+
+
+
+/* slider.css */
+.swiper-container {
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+}
+
+.swiper-wrapper {
+    display: flex; /* Use flexbox to arrange slides horizontally */
+}
+
+.swiper-slide {
+    flex: 0 0 auto; /* Ensure slides don't grow or shrink */
+    width: 100%; /* Each slide occupies full width */
+    text-align: center; /* Center the content within the slide */
+}
+
+
+
+
+.swiper-slide img {
+    max-width: 100%; /* Ensure images don't exceed slide width */
+    max-height: 100%; /* Ensure images don't exceed slide height */
+    width: 90%; /* Set image width to 100% of its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.Products .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #fff;
+    width: calc(20% - 20px); /* 20% width for each card with a margin of 20px */
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 10px;
+    padding: 18px;
+    margin-right: 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease; /* Added transition for smooth zoom effect */
+}
+
+.Products-image img {
+    width: 100%;
+    height: auto;
+}
+
+.card-img-info {
+    text-align: center;
+}
+
+.img-category {
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Adjust the scale factor as desired */
+}
+
+.slider-container {
+    position: relative;
+    overflow-x: scroll; /* Allow horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks */
+}
+
+.slider {
+    display: flex; /* Use flexbox for horizontal layout */
+}
+
+.content {
+    flex-shrink: 0; /* Prevent cards from shrinking */
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1; /* Ensure buttons appear above cards */
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-section {
+    padding: 20px;
+    flex: 1;
+}
+
+.footer-section h2 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #fff;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
