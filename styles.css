@@ -220,3 +220,57 @@ section {
 .footer-bottom p {
     margin: 5px 0;
 }
+
+/* Responsive styles */
+
+/* For screens smaller than 768px (e.g., smartphones) */
+@media only screen and (max-width: 767px) {
+    header {
+        padding: 5px 0; /* Adjust padding for smaller header */
+    }
+
+    .logo img {
+        width: 60px; /* Decrease logo size for smaller screens */
+    }
+
+    .caption {
+        margin-left: 10px; /* Adjust margin for smaller screens */
+    }
+
+    nav ul li {
+        margin: 0 10px; /* Decrease margin between navigation items */
+    }
+
+    section {
+        padding: 10px; /* Adjust padding for smaller sections */
+    }
+
+    /* Additional responsive styles as needed */
+}
+
+/* For screens between 768px and 1023px (e.g., tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .card {
+        width: calc(33.33% - 20px); /* Adjust card width for tablets */
+    }
+    
+    /* Additional responsive styles as needed */
+}
+
+/* For screens larger than 1023px (e.g., desktops) */
+@media only screen and (min-width: 1024px) {
+    .card {
+        width: calc(25% - 20px); /* Adjust card width for larger screens */
+    }
+
+    /* Additional responsive styles as needed */
+}
+
+/* Ensure the footer remains responsive across all screen sizes */
+.footer-content {
+    flex-direction: column; /* Stack footer sections vertically on smaller screens */
+}
+
+.footer-section {
+    flex: none; /* Prevent footer sections from stretching on smaller screens */
+}
