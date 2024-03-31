@@ -217,9 +217,15 @@ section {
     text-align: center;
 }
 
-.footer-bottom p {
-    margin: 5px 0;
+.footer-row {
+    margin-bottom: 5px; /* Add margin between rows */
 }
+
+.footer-row p {
+    margin: 0;
+}
+
+
 
 
 /* For screens smaller than 768px (e.g., smartphones) */
@@ -238,11 +244,17 @@ section {
     }
 
     nav ul li {
-        margin: 10px 0; /* Add margin between navigation items on smaller screens */
+        margin: 5px 0; /* Add smaller margin between navigation items on smaller screens */
     }
 
     .swiper-container {
         height: 250px; /* Adjust slider height for smaller screens */
+        margin: 0 auto; /* Center the swiper container */
+    }
+
+    .swiper-slide img {
+        width: 100%; /* Make the images inside swiper slides responsive */
+        height: 100%; /* Ensure aspect ratio is maintained */
     }
 
     .search-bar {
