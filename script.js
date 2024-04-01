@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var swiper = new Swiper('.swiper-container', {
         direction: 'horizontal',
         loop: true,
-        speed: 800,
+        speed: 900,
         effect: 'fade',
         pagination: {
             el: '.swiper-pagination',
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 var currentSlide = this.slides[this.activeIndex];
                 var currentSlideImages = currentSlide.querySelectorAll('img');
                 currentSlideImages.forEach(function (img) {
-                    img.style.opacity = 1;
+                    img.style.opacity = .5;
                 });
             }
         }
@@ -43,6 +43,6 @@ document.addEventListener('DOMContentLoaded', function () {
         clearInterval(timer);
         timer = setInterval(function () {
             swiper.slideNext();
-        }, 3000);
+        }, 3500);
     });
 });
