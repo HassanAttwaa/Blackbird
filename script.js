@@ -3,8 +3,11 @@ document.addEventListener('DOMContentLoaded', function () {
     var swiper = new Swiper('.swiper-container', {
         direction: 'horizontal',
         loop: true,
-        speed: 900,
+        speed: 800,
         effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        },
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -27,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 var currentSlide = this.slides[this.activeIndex];
                 var currentSlideImages = currentSlide.querySelectorAll('img');
                 currentSlideImages.forEach(function (img) {
-                    img.style.opacity = .5;
+                    img.style.opacity = 1;
                 });
             }
         }
@@ -43,6 +46,6 @@ document.addEventListener('DOMContentLoaded', function () {
         clearInterval(timer);
         timer = setInterval(function () {
             swiper.slideNext();
-        }, 3500);
+        }, 3000);
     });
 });
