@@ -5,9 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
         loop: true,
         speed: 800,
         effect: 'fade',
-        fadeEffect: {
-            crossFade: true
-        },
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
