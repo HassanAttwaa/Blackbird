@@ -199,6 +199,11 @@ section {
         width: 90%; /* Adjust width for better fit on smaller screens */
     }
 
+    .footer-section courses h2{
+        font-size: 10px,
+        font-weight:300px
+    }
+
     .footer-section {
         padding: 0 5px; /* Adjust padding for better spacing */
     }
