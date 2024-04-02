@@ -167,7 +167,7 @@ section {
 
 @media only screen and (max-width: 767px) {
     .logo img {
-        width: 60px; /* Decrease logo size for smaller screens */
+        width: 50px; /* Decrease logo size for smaller screens */
     }
 
     .caption {
@@ -188,11 +188,11 @@ section {
     }
 
     .search-bar {
-        margin-right: 5px; /* Adjust margin for better spacing */
+        margin-right: 6px; /* Adjust margin for better spacing */
     }
 
     #search-input {
-        width: 120px; /* Adjust search input width for better fit */
+        width: 110px; /* Adjust search input width for better fit */
     }
 
     .card {
