@@ -5,6 +5,9 @@ document.addEventListener('DOMContentLoaded', function () {
         loop: true,
         speed: 800,
         effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        },
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -29,14 +32,22 @@ document.addEventListener('DOMContentLoaded', function () {
                 currentSlideImages.forEach(function (img) {
                     img.style.opacity = 1;
                 });
-            }
-        }
+            },
+            slideChangeTransitionEnd: function () {
+                // Fade in current slide's images
+                var currentSlide = this.slides[this.activeIndex];
+                var currentSlideImages = currentSlide.querySelectorAll('img');
+                currentSlideImages.forEach(function (img) {
+                    img.style.opacity = 0;
+                });
+            },
+        },
     });
 
     // Automatic image change after 3 seconds
     var timer = setInterval(function () {
         swiper.slideNext(); // Move to the next slide
-    }, 3000);
+    }, 3500);
 
     // Reset timer when arrow buttons are clicked
     swiper.on('slideChange', function () {
