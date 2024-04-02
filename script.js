@@ -59,10 +59,10 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-// Search by button
+ // Search by icon click
 document.addEventListener('DOMContentLoaded', function () {
-    // Event listener for the search button
-    document.getElementById('search-button').addEventListener('click', function () {
+    // Event listener for the search icon
+    document.getElementById('search-icon').addEventListener('click', function () {
         // Get the search input value
         const searchTerm = document.getElementById('search-input').value.trim().toLowerCase();
 
@@ -90,6 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
 
 
 // Search by keyup
