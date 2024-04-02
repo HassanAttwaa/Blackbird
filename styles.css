@@ -35,6 +35,10 @@
 }
 
 /* Product section styles */
+.title{
+    text-align: center;
+    padding-top: 30px;
+}
 
 .Products .content {
     display: flex;
