@@ -176,7 +176,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     var email = document.getElementById('email').value.trim();
     var message = document.getElementById('message').value.trim();
 
-    if (firstName === '' || surname === '' || phone === '' || email === '' || message === '') {
+    if (firstName === '' || surname === '' || phone === '' || message === '') {
         alert('Please fill in all fields.');
         event.preventDefault(); // Prevent form submission if fields are not filled
     } else {
