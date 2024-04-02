@@ -167,3 +167,21 @@ document.addEventListener('DOMContentLoaded', function () {
 //     });
 // });
 
+
+// send contact
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    var firstName = document.getElementById('first-name').value.trim();
+    var surname = document.getElementById('surname').value.trim();
+    var phone = document.getElementById('phone').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var message = document.getElementById('message').value.trim();
+
+    if (firstName === '' || surname === '' || phone === '' || email === '' || message === '') {
+        alert('Please fill in all fields.');
+        event.preventDefault(); // Prevent form submission if fields are not filled
+    } else {
+        // Form is valid, allow submission
+        // You can also add additional validation here if needed
+        // This example submits the form using the default form action
+    }
+});
