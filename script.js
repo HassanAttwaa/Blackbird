@@ -57,3 +57,113 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 3000);
     });
 });
+
+
+// Search by button
+document.addEventListener('DOMContentLoaded', function () {
+    // Event listener for the search button
+    document.getElementById('search-button').addEventListener('click', function () {
+        // Get the search input value
+        const searchTerm = document.getElementById('search-input').value.trim().toLowerCase();
+
+        // Get all elements with text content
+        const elementsWithText = document.querySelectorAll('*:not(script):not(style)');
+        
+        // Flag to check if the search term is found
+        let found = false;
+
+        // Loop through each element and check if it contains the search term
+        elementsWithText.forEach(element => {
+            if (element.textContent.toLowerCase().includes(searchTerm)) {
+                // Scroll to the element containing the search term
+                element.scrollIntoView({ behavior: 'smooth' });
+                // Set the flag to true indicating the search term is found
+                found = true;
+                // Exit the loop early if the search term is found
+                return;
+            }
+        });
+
+        // If the search term is not found, display an alert
+        if (!found) {
+            alert('No matching results found.');
+        }
+    });
+});
+
+
+// Search by keyup
+// document.addEventListener('DOMContentLoaded', function () {
+//     // Event listener for the search input field
+//     document.getElementById('search-input').addEventListener('keyup', function (event) {
+//         // Get the search input value
+//         const searchTerm = event.target.value.trim().toLowerCase();
+
+//         // Get all elements with text content
+//         const elementsWithText = document.querySelectorAll('*:not(script):not(style)');
+        
+//         // Flag to check if the search term is found
+//         let found = false;
+
+//         // Loop through each element and check if it contains the search term
+//         elementsWithText.forEach(element => {
+//             if (element.textContent.toLowerCase().includes(searchTerm)) {
+//                 // Scroll to the element containing the search term
+//                 element.scrollIntoView({ behavior: 'smooth' });
+//                 // Set the flag to true indicating the search term is found
+//                 found = true;
+//                 // Exit the loop early if the search term is found
+//                 return;
+//             }
+//         });
+
+//         // If the search term is not found, display an alert
+//         if (!found) {
+//             alert('No matching results found.');
+//         }
+//     });
+// });
+
+
+
+// Search by complete the word
+// document.addEventListener('DOMContentLoaded', function () {
+//     // Define a variable to hold the timer ID
+//     let searchTimer;
+
+//     // Event listener for the search input field
+//     document.getElementById('search-input').addEventListener('keyup', function (event) {
+//         // Clear the previous timer
+//         clearTimeout(searchTimer);
+
+//         // Set a new timer to execute the search function after 500 milliseconds (adjust as needed)
+//         searchTimer = setTimeout(function () {
+//             // Get the search input value
+//             const searchTerm = event.target.value.trim().toLowerCase();
+
+//             // Get all elements with text content
+//             const elementsWithText = document.querySelectorAll('*:not(script):not(style)');
+            
+//             // Flag to check if the search term is found
+//             let found = false;
+
+//             // Loop through each element and check if it contains the search term
+//             elementsWithText.forEach(element => {
+//                 if (element.textContent.toLowerCase().includes(searchTerm)) {
+//                     // Scroll to the element containing the search term
+//                     element.scrollIntoView({ behavior: 'smooth' });
+//                     // Set the flag to true indicating the search term is found
+//                     found = true;
+//                     // Exit the loop early if the search term is found
+//                     return;
+//                 }
+//             });
+
+//             // If the search term is not found, display an alert
+//             if (!found) {
+//                 alert('No matching results found.');
+//             }
+//         }, 500); // Adjust the delay time as needed
+//     });
+// });
+
