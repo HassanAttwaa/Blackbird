@@ -167,11 +167,11 @@ section {
 
 @media only screen and (max-width: 767px) {
     .logo img {
-        width: 50px; /* Decrease logo size for smaller screens */
+        width: 40px; /* Decrease logo size for smaller screens */
     }
 
     .caption {
-        margin-left: 5px; /* Adjust margin for better spacing */
+        margin-left: 3px; /* Adjust margin for better spacing */
     }
 
     nav ul {
@@ -184,7 +184,7 @@ section {
     }
 
     .swiper-container {
-        height: 250px; /* Adjust slider height for smaller screens */
+        height: 300px; /* Adjust slider height for smaller screens */
     }
 
     .search-bar {
