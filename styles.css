@@ -167,11 +167,11 @@ section {
 
 @media only screen and (max-width: 767px) {
     .logo img {
-        width: 40px; /* Decrease logo size for smaller screens */
+        width: 60px; /* Decrease logo size for smaller screens */
     }
 
     .caption {
-        margin-left: 3px; /* Adjust margin for better spacing */
+        margin-left: 5px; /* Adjust margin for better spacing */
     }
 
     nav ul {
@@ -184,24 +184,19 @@ section {
     }
 
     .swiper-container {
-        height: 300px; /* Adjust slider height for smaller screens */
+        height: 250px; /* Adjust slider height for smaller screens */
     }
 
     .search-bar {
-        margin-right: 6px; /* Adjust margin for better spacing */
+        margin-right: 5px; /* Adjust margin for better spacing */
     }
 
     #search-input {
-        width: 110px; /* Adjust search input width for better fit */
+        width: 120px; /* Adjust search input width for better fit */
     }
 
     .card {
         width: 90%; /* Adjust width for better fit on smaller screens */
-    }
-
-    .footer-section courses h2{
-        font-size: 10px,
-        font-weight:300px
     }
 
     .footer-section {
