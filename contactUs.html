@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contactUsStyle.css">
+    <link rel="stylesheet" href="./commenStyle.css">
+
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Logo/logo.png" alt="Black Bird Logo">
+            <p class="caption">Black Bird </p>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search...">
+            <button id="search-button">Search</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#men">Men</a></li>
+                <li><a href="#women">Women</a></li>
+                <li><a href="#baby">Baby</a></li>
+                <li><a href="#kids">Kids</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-form">
+        <h2>Contact Us</h2>
+        <form id="contact-form" method="post" action="send_email.php">
+            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form-group">
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>Black Bird Factory Established in 2010, with a motto of Mastery and Quality, aiming to reach the largest number of customers both locally and internationally.</p>
+               
+                   
+                <!-- <a href="#" class="btn btn-primary">Read More</a> -->
+            </div>
+            <div class="footer-section courses">
+                <h2>What We Offer</h2>
+                <ul>
+                    <li>High-Quality Ready-Made Clothing</li>
+                    <li>Diverse Designs</li>
+                    <li>Competitive Prices</li>
+    
+                </ul>
+            </div>
+            <div class="footer-section facilities">
+                <h2>Why Choose Us?</h2>
+                <ul>
+                    <li>Extensive Experience</li>
+                    <li>Strong Reputation</li>
+                    <li>Exceptional Customer Service</li>
+                </ul>
+            </div>
+            <div class="footer-section links">
+                <h2>Our Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+        <footer class="footer-bottom">
+            <div class="footer-row">
+                <p>Office Address: Masjed El Radwan St, Quwesna, Monofiya, Egypt</p>
+            </div>
+            <div class="footer-row">
+                <p>Contact Number:<span>+2 010 9426 0970 </span> +2 010 9426 0970</p>
+            </div>
+            <div class="footer-row">
+                <p>Email Address: Hattwa@outlook.com</p>
+            </div>
+            <div class="footer-row">
+                <p>Copyright © 2024 Blackbird Factory. All Right Reserved.</p>
+            </div>
+        </footer>
+    </footer>
+
+    <!-- JavaScript -->
+    <!-- Link to Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
