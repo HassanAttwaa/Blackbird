@@ -112,24 +112,45 @@ nav ul li a {
     margin: 0;
 }
 
+
+
+
+/* Initially hide the icon */
+#nav-icon {
+    display: none;
+}
+
 /* Media queries for responsiveness */
-
 @media only screen and (max-width: 767px) {
-    .logo img {
-        width: 60px; /* Decrease logo size for smaller screens */
-    }
-
-    .caption {
-        margin-left: 10px; /* Adjust margin for smaller screens */
+    /* Display the icon and hide the regular nav */
+    #nav-icon {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
     }
 
     nav ul {
-        flex-direction: column; /* Stack navigation items vertically on smaller screens */
-        align-items: center; /* Center navigation items on smaller screens */
+        display: none;
+        position: absolute;
+        top: 100%; /* Adjust dropdown position to be below the header */
+        left: 0;
+        background: #fff;
+        width: 100%;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        z-index: 999;
+    }
+
+    nav ul.open {
+        display: flex;
+        flex-direction: column; /* Adjust dropdown to stack items vertically */
+        align-items: center; /* Center items horizontally in the dropdown */
     }
 
     nav ul li {
-        margin: 5px 0; /* Add smaller margin between navigation items on smaller screens */
+        display: block;
+        margin: 10px 0; /* Add some space between each menu item */
     }
 
     .swiper-container {
@@ -154,4 +175,5 @@ nav ul li a {
         flex-direction: column; /* Stack footer sections vertically on smaller screens */
     }
 }
+
 
