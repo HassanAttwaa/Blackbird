@@ -51,9 +51,10 @@
     width: calc(20% - 20px); /* 20% width for each card with a margin of 20px */
     box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
     border-radius: 10px;
-    padding: 18px;
+    padding: 15px;
     margin-right: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom:20px;
     box-sizing: border-box;
     transition: transform 0.3s ease; /* Added transition for smooth zoom effect */
 }
