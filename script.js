@@ -174,10 +174,11 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     var firstName = document.getElementById('first-name').value.trim();
     var surname = document.getElementById('surname').value.trim();
     var phone = document.getElementById('phone').value.trim();
+    var phone = document.getElementById('address').value.trim();
     var email = document.getElementById('email').value.trim();
     var message = document.getElementById('message').value.trim();
 
-    if (firstName === '' || surname === '' || phone === '' || message === '') {
+    if (firstName === '' || surname === '' || phone === '' || message === '' || address ==='') {
         alert('Please fill in all fields.');
         event.preventDefault(); // Prevent form submission if fields are not filled
     } else {
@@ -185,4 +186,16 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         // You can also add additional validation here if needed
         // This example submits the form using the default form action
     }
+});
+
+
+// menu for small screens
+document.addEventListener('DOMContentLoaded', function() {
+    var navIcon = document.getElementById('nav-icon');
+    var navList = document.querySelector('nav ul');
+
+    // Toggle open/close class on clicking the icon
+    navIcon.addEventListener('click', function() {
+        navList.classList.toggle('open');
+    });
 });
