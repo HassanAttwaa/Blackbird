@@ -10,14 +10,14 @@ header {
 }
 
 .logo img {
-    width: 80px; 
+    width: 55px; 
     height: auto;
-    margin-left: 15px;
+    margin-left: 3px;
 }
 
 .caption{
     color: #000000;
-    margin-left: 10px;
+    margin-left: 8px;
 }
 
 nav ul {
@@ -26,7 +26,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 11px;
 }
 
 nav ul li a {
@@ -115,17 +115,12 @@ nav ul li a {
 
 
 
-/* Initially hide the icon */
-#nav-icon {
-    display: none;
-}
-
 /* Media queries for responsiveness */
 @media only screen and (max-width: 767px) {
     /* Display the icon and hide the regular nav */
     #nav-icon {
         display: block;
-        font-size: 24px;
+        font-size: 20px;
         cursor: pointer;
     }
 
@@ -152,6 +147,7 @@ nav ul li a {
         display: block;
         margin: 10px 0; /* Add some space between each menu item */
     }
+
 
     .swiper-container {
         height: 250px; /* Adjust slider height for smaller screens */
