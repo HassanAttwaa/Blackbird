@@ -33,14 +33,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     img.style.opacity = 1;
                 });
             },
-            slideChangeTransitionEnd: function () {
-                // Fade in current slide's images
-                var currentSlide = this.slides[this.activeIndex];
-                var currentSlideImages = currentSlide.querySelectorAll('img');
-                currentSlideImages.forEach(function (img) {
-                    img.style.opacity = 0;
-                });
-            },
         },
     });
 
