@@ -185,7 +185,7 @@
     }
 
     .swiper-pagination {
-        bottom: 20px; /* Adjust this value for smaller screens */
+        bottom: 5px; /* Adjust this value for smaller screens */
     }
 
     
