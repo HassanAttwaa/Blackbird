@@ -37,8 +37,7 @@
 /* Product section styles */
 .title {
     text-align: center;
-/*     padding-top: 45 px; */
-    margin-top:100 px;
+    padding-top: 100px;
 }
 
 .Products .content {
@@ -52,10 +51,10 @@
     width: calc(20% - 20px); /* 20% width for each card with a margin of 20px */
     box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
     border-radius: 10px;
-    padding: 15px;
+    padding: 18px;
     margin-right: 20px;
     margin-top: 10px;
-    margin-bottom:20px;
+    margin-bottom: 20px;
     box-sizing: border-box;
     transition: transform 0.3s ease; /* Added transition for smooth zoom effect */
 }
@@ -94,7 +93,7 @@
     flex-shrink: 0; /* Prevent cards from shrinking */
 }
 
-.prev, .next {
+/* .prev, .next {
     position: absolute;
     top: 100%;
     transform: translateY(-50%);
@@ -104,15 +103,15 @@
     padding: 10px;
     cursor: pointer;
     z-index: 1; /* Ensure buttons appear above cards */
-}
+} */
 
-.prev {
+/* .prev {
     left: 0;
 }
 
 .next {
     right: 0;
-}
+} */
 
 /* Footer styles */
 
@@ -164,3 +163,28 @@
     margin: 0;
 }
 
+/* For small screens, display two cards per row */
+@media only screen and (max-width: 767px) {
+    .card {
+        width: calc(50% - 10px); /* 50% width for each card with a margin of 20px */
+        margin-right: 10px 2px; /* Right margin between cards */
+        margin-top: 10px; /* Top margin */
+        margin-bottom:10px ;
+    }
+    
+    /* Remove right margin from the last card in each row */
+    .card:nth-child(2n) {
+        margin-right: 0;
+    }
+
+
+}
+
+@media only screen and (max-width: 767px) {
+    .swiper-pagination {
+        position: relative;
+        margin-top: 20px; /* Adjust the top margin as needed */
+        text-align: center; /* Center the pagination */
+        width: 100%; /* Set the width to 100% */
+    }
+}
